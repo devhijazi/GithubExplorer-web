@@ -1,0 +1,19 @@
+[build]
+  publish = "build"
+  command = "react-app-rewired build"
+  environment = { GENERATE_SOURCEMAP = "false" }
+
+[[plugins]]
+  package = "netlify-plugin-subfont"
+
+[[plugins]]
+  package = "netlify-plugin-minify-html"
+
+[[plugins]]
+  package = "netlify-plugin-image-optim"
+
+[[plugins]]
+  package = "netlify-plugin-inline-source"
+
+[[plugins]]
+  package = "netlify-plugin-inline-critical-css"
